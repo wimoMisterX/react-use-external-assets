@@ -1,0 +1,6 @@
+CHANGELOG.md
+yarn.lock
+dist
+.git
+.cache
+coverage
