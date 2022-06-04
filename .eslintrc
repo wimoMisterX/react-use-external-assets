@@ -5,7 +5,6 @@
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:import/typescript",
-    "react-app",
     "prettier"
   ],
   "env": {
@@ -15,7 +14,6 @@
     "sourceType": "module"
   },
   "rules": {
-    "react/jsx-key": ["error", { "checkFragmentShorthand": true }],
     "@typescript-eslint/ban-types": "off",
     "@typescript-eslint/ban-ts-comment": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",

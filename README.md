@@ -13,15 +13,15 @@ npm install --save react-use-external-assets
 ## Usage
 
 ```tsx
-import * as React from 'react'
-
-import { useMyHook } from 'react-use-external-assets'
+import { useExternalScripts } from 'react-use-external-assets'
 
 const Example = () => {
-  const example = useMyHook()
+  const loadState = useExternalScripts([
+      'https://my-domain.com/my-script.js'
+  ])
   return (
     <div>
-      {example}
+      {Object.values(loadState).every(s => s === 'ready') ? 'Everything is ready!' : 'Getting things ready...'}
     </div>
   )
 }
